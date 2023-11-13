@@ -18,7 +18,7 @@ final class WeatherViewModel: ObservableObject {
         self.service.vm = self
         getCurrentWeather()
     }
-
+    
     func getCurrentWeather() {
         service.makeCall()
     }

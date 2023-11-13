@@ -28,6 +28,6 @@ struct APIConfig {
     }
 
     static private func getGeocodingFor(city: String) -> Location {
-        return Location(latitude: 0.0, longitude: 0.0)
+        return Location(latitude: Double.random(in: -90...90), longitude: Double.random(in: -180...180))
     }
 }

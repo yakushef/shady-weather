@@ -47,19 +47,18 @@ final class WeatherService: WeatherServiceProtocol {
     private init() {}
     
     func makeCall() {
-        let url = URL(string: APIConfig.makeCityCallURLFor(location: Location(latitude: 0, longitude: 0)))!
+        let url = URL(string: APIConfig.makeCityCallURLFor(location: Location(latitude: Double.random(in: -90...90), longitude: Double.random(in: -180...180))))!
         let publisher = URLSession.shared
             .dataTaskPublisher(for: url)
             .receive(on: DispatchQueue.main)
             .map(\.data)
-//            .decode(type: WeatherResponseModel.self, decoder: JSONDecoder())
+            .decode(type: WeatherResponseModel.self, decoder: JSONDecoder())
             .sink(receiveCompletion: { res in
                 print(res)
             }, receiveValue: { [weak self] response in
-                response.printAsJSON()
-//                print(response)
-//                self?.vm?.weather = response
-//                print(self?.vm?.weather)
+//                response.printAsJSON()
+                self?.vm?.weather = response
+                print(response)
             })
             .store(in: &cancellable)
     }

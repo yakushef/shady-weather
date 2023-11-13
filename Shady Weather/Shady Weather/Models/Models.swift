@@ -30,7 +30,7 @@ struct Clouds: Codable {
 
 // MARK: - Coord
 struct Coord: Codable {
-    let lon, lat: Int
+    let lon, lat: Double
 }
 
 // MARK: - Main
@@ -66,92 +66,10 @@ struct Wind: Codable {
     let speed: Double
     let deg: Int
     let gust: Double
-    //
-    //struct TemeratureModel: Codable {
-    //    var min: Double
-    //    var max: Double
-    //}
-    //
-    //struct WeatherConditionModel: Codable {
-    //    var id: Int {
-    //        0
-    //    }
-    //    var main: String
-    //    var description: String
-    //    var icon: String
-    //}
-    //
-    //struct WeatherModel: Codable {
-    //      var date: Int
-    //    var temperature: Double
-    //    var feelsLike: Double
-    //    var pressure: Int
-    //    var humidity: Int
-    //    var dewPoint: Double
-    //    var clouds: Int
-    //    var windSpeed: Double
-    //    var windDeg: Int
-    //    var weather: [WeatherConditionModel]
-    //    var id: UUID {
-    //        UUID()
-    //    }
-    //
-    //    enum CodingKeys: String, CodingKey {
-    //        case date = "dt"
-    //        case temperature = "temp"
-    //        case feelsLike = "feels_like"
-    //        case pressure = "pressure"
-    //        case humidity = "humidity"
-    //        case dewPoint = "dew_point"
-    //        case clouds = "clouds"
-    //        case windSpeed = "wind_speed"
-    //        case windDeg = "wind_deg"
-    //        case weather = "weather"
-    //    }
-    //
-    //    init() {
-    //        date = 0
-    //        temperature = 0.0
-    //        feelsLike = 0.0
-    //        pressure = 0
-    //        humidity = 0
-    //        dewPoint = 0.0
-    //        clouds = 0
-    //        windSpeed = 0.0
-    //        windDeg = 0
-    //        weather = []
-    //    }
-    //}
-    //
-    //struct WeatherDailyModel: Codable {
-    //    var date: Int
-    //    var temperature: TemeratureModel
-    //    var weather: [WeatherConditionModel]
-    //    var id: UUID {
-    //        UUID()
-    //    }
-    //
-    //    enum CodingKeys: String, CodingKey {
-    //        case date = "dt"
-    //        case temperature = "temp"
-    //        case weather = "weather"
-    //    }
-    //
-    //    init() {
-    //        date = 0
-    //        temperature = TemeratureModel(min: 0.0, max: 0.0)
-    //        weather = [WeatherConditionModel(main: "", description: "", icon: "")]
-    //    }
-    //}
-    //
-    //struct WeatherResponseModel: Codable {
-    //    var current: WeatherModel
-    //    var hourly: [WeatherModel]
-    //    var daily: [WeatherDailyModel]
-    //}
-    
-    struct CityModel: Codable {
-        
-    }
     
 }
+
+struct CityModel: Codable {
+    
+}
+

@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC98917D2B01FFF9008EC2F3 /* Shady_WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98917C2B01FFF9008EC2F3 /* Shady_WeatherApp.swift */; };
+		BC98917F2B01FFF9008EC2F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98917E2B01FFF9008EC2F3 /* ContentView.swift */; };
+		BC9891812B01FFFB008EC2F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9891802B01FFFB008EC2F3 /* Assets.xcassets */; };
+		BC9891842B01FFFB008EC2F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9891832B01FFFB008EC2F3 /* Preview Assets.xcassets */; };
+		BC98918E2B01FFFB008EC2F3 /* Shady_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98918D2B01FFFB008EC2F3 /* Shady_WeatherTests.swift */; };
+		BC9891982B01FFFB008EC2F3 /* Shady_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9891972B01FFFB008EC2F3 /* Shady_WeatherUITests.swift */; };
+		BC98919A2B01FFFB008EC2F3 /* Shady_WeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9891992B01FFFB008EC2F3 /* Shady_WeatherUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC98918A2B01FFFB008EC2F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC9891712B01FFF9008EC2F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9891782B01FFF9008EC2F3;
+			remoteInfo = "Shady Weather";
+		};
+		BC9891942B01FFFB008EC2F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC9891712B01FFF9008EC2F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9891782B01FFF9008EC2F3;
+			remoteInfo = "Shady Weather";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC9891792B01FFF9008EC2F3 /* Shady Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shady Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC98917C2B01FFF9008EC2F3 /* Shady_WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shady_WeatherApp.swift; sourceTree = "<group>"; };
+		BC98917E2B01FFF9008EC2F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC9891802B01FFFB008EC2F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC9891832B01FFFB008EC2F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC9891892B01FFFB008EC2F3 /* Shady WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shady WeatherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC98918D2B01FFFB008EC2F3 /* Shady_WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shady_WeatherTests.swift; sourceTree = "<group>"; };
+		BC9891932B01FFFB008EC2F3 /* Shady WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shady WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC9891972B01FFFB008EC2F3 /* Shady_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shady_WeatherUITests.swift; sourceTree = "<group>"; };
+		BC9891992B01FFFB008EC2F3 /* Shady_WeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shady_WeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC9891762B01FFF9008EC2F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9891862B01FFFB008EC2F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9891902B01FFFB008EC2F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC9891702B01FFF9008EC2F3 = {
+			isa = PBXGroup;
+			children = (
+				BC98917B2B01FFF9008EC2F3 /* Shady Weather */,
+				BC98918C2B01FFFB008EC2F3 /* Shady WeatherTests */,
+				BC9891962B01FFFB008EC2F3 /* Shady WeatherUITests */,
+				BC98917A2B01FFF9008EC2F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC98917A2B01FFF9008EC2F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC9891792B01FFF9008EC2F3 /* Shady Weather.app */,
+				BC9891892B01FFFB008EC2F3 /* Shady WeatherTests.xctest */,
+				BC9891932B01FFFB008EC2F3 /* Shady WeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC98917B2B01FFF9008EC2F3 /* Shady Weather */ = {
+			isa = PBXGroup;
+			children = (
+				BC98917C2B01FFF9008EC2F3 /* Shady_WeatherApp.swift */,
+				BC98917E2B01FFF9008EC2F3 /* ContentView.swift */,
+				BC9891802B01FFFB008EC2F3 /* Assets.xcassets */,
+				BC9891822B01FFFB008EC2F3 /* Preview Content */,
+			);
+			path = "Shady Weather";
+			sourceTree = "<group>";
+		};
+		BC9891822B01FFFB008EC2F3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BC9891832B01FFFB008EC2F3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC98918C2B01FFFB008EC2F3 /* Shady WeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC98918D2B01FFFB008EC2F3 /* Shady_WeatherTests.swift */,
+			);
+			path = "Shady WeatherTests";
+			sourceTree = "<group>";
+		};
+		BC9891962B01FFFB008EC2F3 /* Shady WeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC9891972B01FFFB008EC2F3 /* Shady_WeatherUITests.swift */,
+				BC9891992B01FFFB008EC2F3 /* Shady_WeatherUITestsLaunchTests.swift */,
+			);
+			path = "Shady WeatherUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC9891782B01FFF9008EC2F3 /* Shady Weather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC98919D2B01FFFB008EC2F3 /* Build configuration list for PBXNativeTarget "Shady Weather" */;
+			buildPhases = (
+				BC9891752B01FFF9008EC2F3 /* Sources */,
+				BC9891762B01FFF9008EC2F3 /* Frameworks */,
+				BC9891772B01FFF9008EC2F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shady Weather";
+			productName = "Shady Weather";
+			productReference = BC9891792B01FFF9008EC2F3 /* Shady Weather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC9891882B01FFFB008EC2F3 /* Shady WeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC9891A02B01FFFB008EC2F3 /* Build configuration list for PBXNativeTarget "Shady WeatherTests" */;
+			buildPhases = (
+				BC9891852B01FFFB008EC2F3 /* Sources */,
+				BC9891862B01FFFB008EC2F3 /* Frameworks */,
+				BC9891872B01FFFB008EC2F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC98918B2B01FFFB008EC2F3 /* PBXTargetDependency */,
+			);
+			name = "Shady WeatherTests";
+			productName = "Shady WeatherTests";
+			productReference = BC9891892B01FFFB008EC2F3 /* Shady WeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC9891922B01FFFB008EC2F3 /* Shady WeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC9891A32B01FFFB008EC2F3 /* Build configuration list for PBXNativeTarget "Shady WeatherUITests" */;
+			buildPhases = (
+				BC98918F2B01FFFB008EC2F3 /* Sources */,
+				BC9891902B01FFFB008EC2F3 /* Frameworks */,
+				BC9891912B01FFFB008EC2F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC9891952B01FFFB008EC2F3 /* PBXTargetDependency */,
+			);
+			name = "Shady WeatherUITests";
+			productName = "Shady WeatherUITests";
+			productReference = BC9891932B01FFFB008EC2F3 /* Shady WeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC9891712B01FFF9008EC2F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					BC9891782B01FFF9008EC2F3 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					BC9891882B01FFFB008EC2F3 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = BC9891782B01FFF9008EC2F3;
+					};
+					BC9891922B01FFFB008EC2F3 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = BC9891782B01FFF9008EC2F3;
+					};
+				};
+			};
+			buildConfigurationList = BC9891742B01FFF9008EC2F3 /* Build configuration list for PBXProject "Shady Weather" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC9891702B01FFF9008EC2F3;
+			productRefGroup = BC98917A2B01FFF9008EC2F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC9891782B01FFF9008EC2F3 /* Shady Weather */,
+				BC9891882B01FFFB008EC2F3 /* Shady WeatherTests */,
+				BC9891922B01FFFB008EC2F3 /* Shady WeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC9891772B01FFF9008EC2F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC9891842B01FFFB008EC2F3 /* Preview Assets.xcassets in Resources */,
+				BC9891812B01FFFB008EC2F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9891872B01FFFB008EC2F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9891912B01FFFB008EC2F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC9891752B01FFF9008EC2F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC98917F2B01FFF9008EC2F3 /* ContentView.swift in Sources */,
+				BC98917D2B01FFF9008EC2F3 /* Shady_WeatherApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9891852B01FFFB008EC2F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC98918E2B01FFFB008EC2F3 /* Shady_WeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC98918F2B01FFFB008EC2F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC9891982B01FFFB008EC2F3 /* Shady_WeatherUITests.swift in Sources */,
+				BC98919A2B01FFFB008EC2F3 /* Shady_WeatherUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC98918B2B01FFFB008EC2F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC9891782B01FFF9008EC2F3 /* Shady Weather */;
+			targetProxy = BC98918A2B01FFFB008EC2F3 /* PBXContainerItemProxy */;
+		};
+		BC9891952B01FFFB008EC2F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC9891782B01FFF9008EC2F3 /* Shady Weather */;
+			targetProxy = BC9891942B01FFFB008EC2F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BC98919B2B01FFFB008EC2F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC98919C2B01FFFB008EC2F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC98919E2B01FFFB008EC2F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Shady Weather/Preview Content\"";
+				DEVELOPMENT_TEAM = 7XT93683G9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alekaiiakushev.Shady-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC98919F2B01FFFB008EC2F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Shady Weather/Preview Content\"";
+				DEVELOPMENT_TEAM = 7XT93683G9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alekaiiakushev.Shady-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC9891A12B01FFFB008EC2F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7XT93683G9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alekaiiakushev.Shady-WeatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shady Weather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shady Weather";
+			};
+			name = Debug;
+		};
+		BC9891A22B01FFFB008EC2F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7XT93683G9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alekaiiakushev.Shady-WeatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shady Weather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shady Weather";
+			};
+			name = Release;
+		};
+		BC9891A42B01FFFB008EC2F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7XT93683G9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alekaiiakushev.Shady-WeatherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Shady Weather";
+			};
+			name = Debug;
+		};
+		BC9891A52B01FFFB008EC2F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7XT93683G9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alekaiiakushev.Shady-WeatherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Shady Weather";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC9891742B01FFF9008EC2F3 /* Build configuration list for PBXProject "Shady Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC98919B2B01FFFB008EC2F3 /* Debug */,
+				BC98919C2B01FFFB008EC2F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC98919D2B01FFFB008EC2F3 /* Build configuration list for PBXNativeTarget "Shady Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC98919E2B01FFFB008EC2F3 /* Debug */,
+				BC98919F2B01FFFB008EC2F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC9891A02B01FFFB008EC2F3 /* Build configuration list for PBXNativeTarget "Shady WeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC9891A12B01FFFB008EC2F3 /* Debug */,
+				BC9891A22B01FFFB008EC2F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC9891A32B01FFFB008EC2F3 /* Build configuration list for PBXNativeTarget "Shady WeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC9891A42B01FFFB008EC2F3 /* Debug */,
+				BC9891A52B01FFFB008EC2F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC9891712B01FFF9008EC2F3 /* Project object */;
+}

@@ -16,6 +16,7 @@ struct WeatherView: View {
                 .imageScale(.large)
                 .foregroundStyle(.foreground)
             Text("\(viewModel.weather?.main.temp ?? 0.0)")
+            ShaderBackgroundView()
         }
         .padding()
     }

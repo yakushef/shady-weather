@@ -11,14 +11,17 @@ struct WeatherView: View {
     @ObservedObject var viewModel: WeatherViewModel
     
     var body: some View {
-        VStack {
-            Image(systemName: "umbrella")
-                .imageScale(.large)
-                .foregroundStyle(.foreground)
-            Text("\(viewModel.weather?.main.temp ?? 0.0)")
+        ZStack {
             ShaderBackgroundView()
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                Image(systemName: "umbrella")
+                    .imageScale(.large)
+                    .foregroundStyle(.foreground)
+                Text("\(viewModel.weather?.main.temp ?? 0.0)")
+            }
+            .padding()
         }
-        .padding()
     }
 }
 

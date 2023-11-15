@@ -21,13 +21,7 @@ struct APIConfig {
         return "\(endpoint)/weather?lat=\(location.latitude)&lon=\(location.longitude)&appid=\(apiKey)&units=metric"//&exclude=\(excluded)&units=metric"
     }
 
-    static func makeCityCallURLfor(city: String) -> String {
-        let location = getGeocodingFor(city: city)
-        let call = makeCityCallURLFor(location: location)
-        return call
-    }
-
-    static private func getGeocodingFor(city: String) -> Location {
-        return Location(latitude: Double.random(in: -90...90), longitude: Double.random(in: -180...180))
+    static func makeGeocodingCallURLFor(city: String) -> String {
+        return "https://api.openweathermap.org/geo/1.0/direct?q=\(city)&limit=1&appid=\(apiKey)"
     }
 }

@@ -9,7 +9,6 @@ import Combine
 import Foundation
 import SwiftUI
 
-// Create a NumberFormatter object
 public let numberFormatter = {
     let numberFormatter = NumberFormatter()
 
@@ -51,7 +50,14 @@ final class WeatherViewModel: ObservableObject {
     }
     @Published var iconURL: String = ""
     @Published var tempString: String = "?"
+    
     @Published var cityName: String = "..."
+    var location: Location = Location(latitude: 55.77, longitude: 37.47) {
+        didSet {
+            getCurrentWeather()
+        }
+    }
+    
     @Published var weatherImage: Image? = Image(systemName: "questionmark.circle.fill")
     
     init(service: WeatherServiceProtocol = WeatherService.shared) {
@@ -61,10 +67,10 @@ final class WeatherViewModel: ObservableObject {
     }
     
     func getCurrentWeatherFor(city: String) {
-//        service.makeCallfor
+        service.makeCallFor(city: city)
     }
     
     func getCurrentWeather() {
-        service.makeCall()
+        service.makeCallFor(location: location)
     }
 }

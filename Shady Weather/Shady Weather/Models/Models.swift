@@ -35,9 +35,9 @@ struct Coord: Codable {
 
 // MARK: - Main
 struct Main: Codable {
-    let humidity: Int
+    let humidity: Int?
     let feelsLike, tempMin, tempMax, temp: Double
-    let pressure, seaLevel, grndLevel: Int
+    let pressure, seaLevel, grndLevel: Int?
 
     enum CodingKeys: String, CodingKey {
         case humidity
@@ -63,13 +63,24 @@ struct Weather: Codable {
 
 // MARK: - Wind
 struct Wind: Codable {
-    let speed: Double
-    let deg: Int
-    let gust: Double
+    let speed: Double?
+    let deg: Int?
+    let gust: Double?
     
 }
 
-struct CityModel: Codable {
-    
+struct CityResponseModel: Codable {
+    let name: String
+    let localNames: [String: String]?
+    let lat, lon: Double
+    let country, state: String
+
+    enum CodingKeys: String, CodingKey {
+        case name
+        case localNames = "local_names"
+        case lat, lon, country, state
+    }
 }
+
+typealias CityResponse = [CityResponseModel]
 

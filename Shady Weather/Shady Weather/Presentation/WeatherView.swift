@@ -7,15 +7,18 @@
 
 import SwiftUI
 
+let testCities = [
+    "London",
+    "Moscow",
+    "Мурманск",
+    "Београд"
+]
+
 struct WeatherView: View {
     @ObservedObject var viewModel: WeatherViewModel
     
     @State private var showingSearch = false
-    @State private var cityName = "..." {
-        didSet {
-            viewModel.getCurrentWeatherFor(city: cityName)
-        }
-    }
+    @State private var cityName = "..." 
     
     var body: some View {
         NavigationView{
@@ -45,7 +48,7 @@ struct WeatherView: View {
                 })
                 ToolbarItem(placement: .topBarTrailing, content: {
                     Button {
-                        
+                        viewModel.getCurrentWeatherFor(city: testCities.randomElement() ?? "Toronto")
                     } label: {
                         Image(systemName: "magnifyingglass")
                             .imageScale(.large)

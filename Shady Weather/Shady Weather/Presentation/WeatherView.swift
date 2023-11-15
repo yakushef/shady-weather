@@ -11,16 +11,14 @@ struct WeatherView: View {
     @ObservedObject var viewModel: WeatherViewModel
     
     @State private var showingSearch = false
-    @State private var cityName = "..." {
-        didSet {
-            viewModel.getCurrentWeatherFor(city: cityName)
-        }
-    }
+    @State private var cityName = "..."
     
     var body: some View {
+    var temp: Double = Double(viewModel.tempString) ?? 0.0
+        
         NavigationView{
             ZStack {
-                ShaderBackgroundView()
+                ShaderBackgroundView(temp: temp)
                     .edgesIgnoringSafeArea(.all)
                 VStack {
                     viewModel.weatherImage

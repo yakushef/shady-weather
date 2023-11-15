@@ -8,6 +8,7 @@
 import Combine
 import Foundation
 import SwiftUI
+import SpriteKit
 
 public let numberFormatter = {
     let numberFormatter = NumberFormatter()
@@ -26,6 +27,8 @@ final class WeatherViewModel: ObservableObject {
         didSet {
             if let weather {
                 tempString = numberFormatter.string(from: NSNumber(value: weather.main.temp)) ?? "?"
+                temp = weather.main.temp
+                color.vectorFloat4Value = vector_float4(0, 0, Float(temp)*0.25, 0)
                 iconURL = "https://openweathermap.org/img/wn/" + (weather.weather.first?.icon ?? "") + ".png"
                 let image = {
                     switch weather.weather.first?.icon {
@@ -50,7 +53,12 @@ final class WeatherViewModel: ObservableObject {
     }
     @Published var iconURL: String = ""
     @Published var tempString: String = "?"
-    
+    @Published var temp: Double = 0.0
+    @Published var color: SKUniform = {
+        let color = SKUniform(name: "u_color")
+        color.vectorFloat4Value = vector_float4(0, 0, 1, 0)
+        return color
+    }()
     @Published var cityName: String = "..."
     var location: Location = Location(latitude: 55.77, longitude: 37.47) {
         didSet {

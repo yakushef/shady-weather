@@ -27,7 +27,7 @@ struct WeatherView: View {
     var body: some View {
         NavigationView{
             ZStack {
-                ShaderBackgroundView(weatherVM: viewModel)
+                ShaderBackgroundView()
                     .edgesIgnoringSafeArea(.all)
                 VStack {
                     viewModel.weatherImage

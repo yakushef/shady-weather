@@ -36,7 +36,8 @@ public extension Dictionary {
 
 protocol WeatherServiceProtocol {
     var vm: WeatherViewModel? {get set}
-    func makeCall()
+    func makeCallFor(location: Location)
+    func makeCallFor(city: String)
 }
 
 final class WeatherService: WeatherServiceProtocol {
@@ -46,8 +47,8 @@ final class WeatherService: WeatherServiceProtocol {
     
     private init() {}
     
-    func makeCall() {
-        let url = URL(string: APIConfig.makeCityCallURLFor(location: Location(latitude: 55.77, longitude: 37.47)))!
+    func makeCallFor(location: Location) {
+        let url = URL(string: APIConfig.makeCityCallURLFor(location: location))!
         let publisher = URLSession.shared
             .dataTaskPublisher(for: url)
             .receive(on: DispatchQueue.main)
@@ -56,7 +57,6 @@ final class WeatherService: WeatherServiceProtocol {
             .sink(receiveCompletion: { res in
                 print(res)
             }, receiveValue: { [weak self] response in
-//                response.printAsJSON()
                 self?.vm?.weather = response
                 print(response)
             })
@@ -64,6 +64,22 @@ final class WeatherService: WeatherServiceProtocol {
     }
     
     func makeCallFor(city: String) {
+        let url = URL(string: APIConfig.makeGeocodingCallURLFor(city: city))!
         
+        let publisher = URLSession.shared
+            .dataTaskPublisher(for: url)
+            .receive(on: DispatchQueue.main)
+            .map(\.data)
+            .decode(type: CityResponse.self, decoder: JSONDecoder())
+            .sink(receiveCompletion: { res in
+                print(res)
+            }, receiveValue: { [weak self] response in
+                let lon = response.first?.lon ?? 0.0
+                let lat = response.first?.lat ?? 0.0
+                self?.vm?.location = Location(latitude: lat, longitude: lon)
+                print(response)
+            })
+            .store(in: &cancellable)
     }
 }
+

@@ -11,7 +11,6 @@
 		BC4F1A922B03F057002CC837 /* ShaderBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4F1A912B03F057002CC837 /* ShaderBackgroundView.swift */; };
 		BC4F1A962B03F254002CC837 /* abstract_background.fsh in Resources */ = {isa = PBXBuildFile; fileRef = BC4F1A952B03F254002CC837 /* abstract_background.fsh */; };
 		BC4F1A982B040E73002CC837 /* testShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = BC4F1A972B040E73002CC837 /* testShader.fsh */; };
-		BC4F1A9B2B04A74D002CC837 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BC4F1A9A2B04A74D002CC837 /* Kingfisher */; };
 		BC98917D2B01FFF9008EC2F3 /* Shady_WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98917C2B01FFF9008EC2F3 /* Shady_WeatherApp.swift */; };
 		BC98917F2B01FFF9008EC2F3 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98917E2B01FFF9008EC2F3 /* WeatherView.swift */; };
 		BC9891812B01FFFB008EC2F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9891802B01FFFB008EC2F3 /* Assets.xcassets */; };
@@ -70,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC4F1A9B2B04A74D002CC837 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +195,6 @@
 			);
 			name = "Shady Weather";
 			packageProductDependencies = (
-				BC4F1A9A2B04A74D002CC837 /* Kingfisher */,
 			);
 			productName = "Shady Weather";
 			productReference = BC9891792B01FFF9008EC2F3 /* Shady Weather.app */;
@@ -667,14 +664,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		BC4F1A9A2B04A74D002CC837 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BC4F1A992B04A74D002CC837 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC9891712B01FFF9008EC2F3 /* Project object */;
 }

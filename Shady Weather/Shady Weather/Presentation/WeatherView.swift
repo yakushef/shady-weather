@@ -5,26 +5,56 @@
 //  Created by Aleksey Yakushev on 13.11.2023.
 //
 
-import Kingfisher
 import SwiftUI
 
 struct WeatherView: View {
     @ObservedObject var viewModel: WeatherViewModel
     
-    var body: some View {
-        ZStack {
-            ShaderBackgroundView()
-                .edgesIgnoringSafeArea(.all)
-            VStack {
-                viewModel.weatherImage
-                    .imageScale(.large)
-                Spacer()
-                    .frame(height: 15)
-                Text(viewModel.tempString + "°C")
-                    .font(.title3)
-            }
-            .padding()
+    @State private var showingSearch = false
+    @State private var cityName = "..." {
+        didSet {
+            viewModel.getCurrentWeatherFor(city: cityName)
         }
+    }
+    
+    var body: some View {
+        NavigationView{
+            ZStack {
+                ShaderBackgroundView()
+                    .edgesIgnoringSafeArea(.all)
+                VStack {
+                    viewModel.weatherImage
+                        .imageScale(.large)
+                    Spacer()
+                        .frame(height: 15)
+                    Text(viewModel.tempString + "°C")
+                        .font(.title3)
+                }
+                .padding()
+            
+        }
+            .navigationTitle(viewModel.cityName)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing, content: {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "mappin.and.ellipse")
+                            .imageScale(.large)
+                    }
+                })
+                ToolbarItem(placement: .topBarTrailing, content: {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "magnifyingglass")
+                            .imageScale(.large)
+                    }
+                })
+            }
+            .toolbarBackground(.visible, for: .navigationBar)
+        }
+        .accentColor(.primary)
     }
 }
 

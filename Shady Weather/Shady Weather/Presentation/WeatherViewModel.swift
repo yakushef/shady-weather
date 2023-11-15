@@ -45,17 +45,23 @@ final class WeatherViewModel: ObservableObject {
                     }
                 }()
                 weatherImage = image
+                cityName = weather.name
             }
         }
     }
     @Published var iconURL: String = ""
     @Published var tempString: String = "?"
+    @Published var cityName: String = "..."
     @Published var weatherImage: Image? = Image(systemName: "questionmark.circle.fill")
     
     init(service: WeatherServiceProtocol = WeatherService.shared) {
         self.service = service
         self.service.vm = self
         getCurrentWeather()
+    }
+    
+    func getCurrentWeatherFor(city: String) {
+//        service.makeCallfor
     }
     
     func getCurrentWeather() {

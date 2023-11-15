@@ -62,4 +62,8 @@ final class WeatherService: WeatherServiceProtocol {
             })
             .store(in: &cancellable)
     }
+    
+    func makeCallFor(city: String) {
+        
+    }
 }

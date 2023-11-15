@@ -18,7 +18,7 @@ struct APIConfig {
 
     static func makeCityCallURLFor(location: Location) -> String {
         let excluded = "minutely"
-        return "\(endpoint)/weather?lat=\(location.latitude)&lon=\(location.longitude)&appid=\(apiKey)"//&exclude=\(excluded)&units=metric"
+        return "\(endpoint)/weather?lat=\(location.latitude)&lon=\(location.longitude)&appid=\(apiKey)&units=metric"//&exclude=\(excluded)&units=metric"
     }
 
     static func makeCityCallURLfor(city: String) -> String {

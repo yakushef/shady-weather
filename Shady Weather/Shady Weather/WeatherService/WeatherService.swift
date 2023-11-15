@@ -47,7 +47,7 @@ final class WeatherService: WeatherServiceProtocol {
     private init() {}
     
     func makeCall() {
-        let url = URL(string: APIConfig.makeCityCallURLFor(location: Location(latitude: Double.random(in: -90...90), longitude: Double.random(in: -180...180))))!
+        let url = URL(string: APIConfig.makeCityCallURLFor(location: Location(latitude: 55.77, longitude: 37.47)))!
         let publisher = URLSession.shared
             .dataTaskPublisher(for: url)
             .receive(on: DispatchQueue.main)

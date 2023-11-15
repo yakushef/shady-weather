@@ -5,6 +5,7 @@
 //  Created by Aleksey Yakushev on 13.11.2023.
 //
 
+import Kingfisher
 import SwiftUI
 
 struct WeatherView: View {
@@ -15,10 +16,12 @@ struct WeatherView: View {
             ShaderBackgroundView()
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                Image(systemName: "umbrella")
+                viewModel.weatherImage
                     .imageScale(.large)
-                    .foregroundStyle(.foreground)
-                Text("\(viewModel.weather?.main.temp ?? 0.0)")
+                Spacer()
+                    .frame(height: 15)
+                Text(viewModel.tempString + "°C")
+                    .font(.title3)
             }
             .padding()
         }

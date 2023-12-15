@@ -18,7 +18,7 @@ struct WeatherView: View {
     @ObservedObject var viewModel: WeatherViewModel
     
     @State private var showingSearch = false
-    @State private var cityName = "..." 
+    @State private var cityName = ""
     
     var body: some View {
         NavigationView{
@@ -40,7 +40,7 @@ struct WeatherView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing, content: {
                     Button {
-                        
+                        viewModel.getCurrentWeatherFor(city: testCities.randomElement() ?? "Toronto")
                     } label: {
                         Image(systemName: "mappin.and.ellipse")
                             .imageScale(.large)
@@ -48,11 +48,20 @@ struct WeatherView: View {
                 })
                 ToolbarItem(placement: .topBarTrailing, content: {
                     Button {
-                        viewModel.getCurrentWeatherFor(city: testCities.randomElement() ?? "Toronto")
+                        showingSearch = true
                     } label: {
                         Image(systemName: "magnifyingglass")
                             .imageScale(.large)
                     }
+                    .alert("Find a place", isPresented: $showingSearch, actions: {
+                        TextField("City", text: $cityName)
+                        Button("OK", action: {
+                            viewModel.getCurrentWeatherFor(city: cityName)
+                        })
+                        Button("Cancel", role: .cancel, action: {})
+                    }, message: {
+                        Text("Enter city name below.")
+                    })
                 })
             }
             .toolbarBackground(.visible, for: .navigationBar)
@@ -64,3 +73,4 @@ struct WeatherView: View {
 #Preview {
     WeatherView(viewModel: WeatherViewModel())
 }
+

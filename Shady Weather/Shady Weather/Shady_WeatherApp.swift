@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct Shady_WeatherApp: App {
-    let weatherVM = WeatherViewModel()
+    @StateObject var weatherVM = WeatherViewModel()
     
     var body: some Scene {
         WindowGroup {

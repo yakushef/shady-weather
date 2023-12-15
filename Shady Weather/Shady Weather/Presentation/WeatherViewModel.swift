@@ -8,6 +8,7 @@
 import Combine
 import Foundation
 import SwiftUI
+import SpriteKit
 
 public let numberFormatter = {
     let numberFormatter = NumberFormatter()
@@ -22,10 +23,21 @@ public let numberFormatter = {
 final class WeatherViewModel: ObservableObject {
     private var service: WeatherServiceProtocol
     
+    //TODO: создать модель для вью и конвертировать при назначении? но кто конвертирует и почему (пусть это будет метод модели для показа)
     var weather: WeatherResponseModel? = nil {
         didSet {
             if let weather {
                 tempString = numberFormatter.string(from: NSNumber(value: weather.main.temp)) ?? "?"
+                temp = weather.main.temp
+                
+                let newColor = vector_float4(0, 0, colorMap(value: temp), 0)
+                if color != newColor {
+                    ShaderTransitionController.shared.startTransition(to: newColor)
+                    color = newColor
+                }
+                
+                ShaderTransitionController.shared.setWindSpeed(to: weather.wind.speed ?? 1)
+                
                 iconURL = "https://openweathermap.org/img/wn/" + (weather.weather.first?.icon ?? "") + ".png"
                 let image = {
                     switch weather.weather.first?.icon {
@@ -50,8 +62,10 @@ final class WeatherViewModel: ObservableObject {
     }
     @Published var iconURL: String = ""
     @Published var tempString: String = "?"
-    
+    @Published var temp: Double = 0.0
+    @Published var color = vector_float4(0, 0, 1, 0)
     @Published var cityName: String = "..."
+    
     var location: Location = Location(latitude: 55.77, longitude: 37.47) {
         didSet {
             getCurrentWeather()
@@ -73,4 +87,9 @@ final class WeatherViewModel: ObservableObject {
     func getCurrentWeather() {
         service.makeCallFor(location: location)
     }
+    
+    private func colorMap (value: Double, from: ClosedRange<Double> = -10...10, to: ClosedRange<Double> = 0...1) -> Float {
+      return Float((value - from.lowerBound) / (from.upperBound - from.lowerBound) * (to.upperBound - to.lowerBound) + to.lowerBound)
+    }
+
 }

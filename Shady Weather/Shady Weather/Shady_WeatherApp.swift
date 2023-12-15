@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Shady_WeatherApp: App {
+    let weatherVM = WeatherViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WeatherView(viewModel: weatherVM)
         }
     }
 }

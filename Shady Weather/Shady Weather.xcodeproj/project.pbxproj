@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC4F1A8E2B02CE77002CC837 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4F1A8D2B02CE77002CC837 /* APIKey.swift */; };
+		BC4F1A922B03F057002CC837 /* ShaderBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4F1A912B03F057002CC837 /* ShaderBackgroundView.swift */; };
+		BC4F1A962B03F254002CC837 /* abstract_background.fsh in Resources */ = {isa = PBXBuildFile; fileRef = BC4F1A952B03F254002CC837 /* abstract_background.fsh */; };
+		BC4F1A982B040E73002CC837 /* testShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = BC4F1A972B040E73002CC837 /* testShader.fsh */; };
 		BC98917D2B01FFF9008EC2F3 /* Shady_WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98917C2B01FFF9008EC2F3 /* Shady_WeatherApp.swift */; };
-		BC98917F2B01FFF9008EC2F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98917E2B01FFF9008EC2F3 /* ContentView.swift */; };
+		BC98917F2B01FFF9008EC2F3 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98917E2B01FFF9008EC2F3 /* WeatherView.swift */; };
 		BC9891812B01FFFB008EC2F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9891802B01FFFB008EC2F3 /* Assets.xcassets */; };
 		BC9891842B01FFFB008EC2F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9891832B01FFFB008EC2F3 /* Preview Assets.xcassets */; };
 		BC98918E2B01FFFB008EC2F3 /* Shady_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98918D2B01FFFB008EC2F3 /* Shady_WeatherTests.swift */; };
 		BC9891982B01FFFB008EC2F3 /* Shady_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9891972B01FFFB008EC2F3 /* Shady_WeatherUITests.swift */; };
 		BC98919A2B01FFFB008EC2F3 /* Shady_WeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9891992B01FFFB008EC2F3 /* Shady_WeatherUITestsLaunchTests.swift */; };
+		BC9891B32B02ACE6008EC2F3 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9891B22B02ACE6008EC2F3 /* WeatherViewModel.swift */; };
+		BC9891B52B02AD36008EC2F3 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9891B42B02AD36008EC2F3 /* WeatherService.swift */; };
+		BC9891B72B02AE3B008EC2F3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9891B62B02AE3B008EC2F3 /* Models.swift */; };
+		BC9891B92B02AE78008EC2F3 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9891B82B02AE78008EC2F3 /* APIConfig.swift */; };
+		BC9891BB2B02B983008EC2F3 /* WeatherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9891BA2B02B983008EC2F3 /* WeatherError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC4F1A8D2B02CE77002CC837 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		BC4F1A912B03F057002CC837 /* ShaderBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderBackgroundView.swift; sourceTree = "<group>"; };
+		BC4F1A952B03F254002CC837 /* abstract_background.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = abstract_background.fsh; sourceTree = "<group>"; };
+		BC4F1A972B040E73002CC837 /* testShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = testShader.fsh; sourceTree = "<group>"; };
 		BC9891792B01FFF9008EC2F3 /* Shady Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shady Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC98917C2B01FFF9008EC2F3 /* Shady_WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shady_WeatherApp.swift; sourceTree = "<group>"; };
-		BC98917E2B01FFF9008EC2F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC98917E2B01FFF9008EC2F3 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		BC9891802B01FFFB008EC2F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC9891832B01FFFB008EC2F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC9891892B01FFFB008EC2F3 /* Shady WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shady WeatherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +57,11 @@
 		BC9891932B01FFFB008EC2F3 /* Shady WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shady WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9891972B01FFFB008EC2F3 /* Shady_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shady_WeatherUITests.swift; sourceTree = "<group>"; };
 		BC9891992B01FFFB008EC2F3 /* Shady_WeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shady_WeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC9891B22B02ACE6008EC2F3 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		BC9891B42B02AD36008EC2F3 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		BC9891B62B02AE3B008EC2F3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		BC9891B82B02AE78008EC2F3 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		BC9891BA2B02B983008EC2F3 /* WeatherError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +112,10 @@
 		BC98917B2B01FFF9008EC2F3 /* Shady Weather */ = {
 			isa = PBXGroup;
 			children = (
+				BC9891AE2B02AB45008EC2F3 /* Presentation */,
+				BC9891AD2B02AB3C008EC2F3 /* WeatherService */,
+				BC9891AC2B02AB35008EC2F3 /* Models */,
 				BC98917C2B01FFF9008EC2F3 /* Shady_WeatherApp.swift */,
-				BC98917E2B01FFF9008EC2F3 /* ContentView.swift */,
 				BC9891802B01FFFB008EC2F3 /* Assets.xcassets */,
 				BC9891822B01FFFB008EC2F3 /* Preview Content */,
 			);
@@ -127,6 +147,37 @@
 			path = "Shady WeatherUITests";
 			sourceTree = "<group>";
 		};
+		BC9891AC2B02AB35008EC2F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC9891B62B02AE3B008EC2F3 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC9891AD2B02AB3C008EC2F3 /* WeatherService */ = {
+			isa = PBXGroup;
+			children = (
+				BC9891B42B02AD36008EC2F3 /* WeatherService.swift */,
+				BC9891B82B02AE78008EC2F3 /* APIConfig.swift */,
+				BC4F1A8D2B02CE77002CC837 /* APIKey.swift */,
+				BC9891BA2B02B983008EC2F3 /* WeatherError.swift */,
+			);
+			path = WeatherService;
+			sourceTree = "<group>";
+		};
+		BC9891AE2B02AB45008EC2F3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BC4F1A952B03F254002CC837 /* abstract_background.fsh */,
+				BC4F1A972B040E73002CC837 /* testShader.fsh */,
+				BC98917E2B01FFF9008EC2F3 /* WeatherView.swift */,
+				BC9891B22B02ACE6008EC2F3 /* WeatherViewModel.swift */,
+				BC4F1A912B03F057002CC837 /* ShaderBackgroundView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +194,8 @@
 			dependencies = (
 			);
 			name = "Shady Weather";
+			packageProductDependencies = (
+			);
 			productName = "Shady Weather";
 			productReference = BC9891792B01FFF9008EC2F3 /* Shady Weather.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +268,9 @@
 				Base,
 			);
 			mainGroup = BC9891702B01FFF9008EC2F3;
+			packageReferences = (
+				BC4F1A992B04A74D002CC837 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = BC98917A2B01FFF9008EC2F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC9891842B01FFFB008EC2F3 /* Preview Assets.xcassets in Resources */,
+				BC4F1A962B03F254002CC837 /* abstract_background.fsh in Resources */,
+				BC4F1A982B040E73002CC837 /* testShader.fsh in Resources */,
 				BC9891812B01FFFB008EC2F3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC98917F2B01FFF9008EC2F3 /* ContentView.swift in Sources */,
+				BC9891B52B02AD36008EC2F3 /* WeatherService.swift in Sources */,
+				BC4F1A922B03F057002CC837 /* ShaderBackgroundView.swift in Sources */,
+				BC98917F2B01FFF9008EC2F3 /* WeatherView.swift in Sources */,
+				BC4F1A8E2B02CE77002CC837 /* APIKey.swift in Sources */,
+				BC9891B92B02AE78008EC2F3 /* APIConfig.swift in Sources */,
+				BC9891B32B02ACE6008EC2F3 /* WeatherViewModel.swift in Sources */,
 				BC98917D2B01FFF9008EC2F3 /* Shady_WeatherApp.swift in Sources */,
+				BC9891B72B02AE3B008EC2F3 /* Models.swift in Sources */,
+				BC9891BB2B02B983008EC2F3 /* WeatherError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +653,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC4F1A992B04A74D002CC837 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = BC9891712B01FFF9008EC2F3 /* Project object */;
 }

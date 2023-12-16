@@ -10,7 +10,7 @@
 
 При запуске показывается главный экран с текущей погодой:
 
-<img src="https://github.com/yakushef/shady-weather/blob/49ccd6211e4a8f3349eefda5fa42a825010e1243/Shady%20Weather/Screenshots/ezgif-1-8d72d0bec0.gif" width="250">
+<img src="https://github.com/yakushef/shady-weather/blob/d8e9459e3e8dd62708b98999a54f786b33e195b4/Shady%20Weather/Screenshots/ezgif-1-fd7582b01f.gif" width="250">
 
 Можно ввести название города вручную. В будущем будет реализован доступ к местоположению с помощью Core Location.
 При смене города шейдер реагирует на изменение температуры, облачности и скорости ветра.
